@@ -38,7 +38,7 @@ class Body extends Component {
                                         {
                                             candidate.website.length 
                                             ? 
-                                                <a href={candidate.website}>{candidate.website}</a> 
+                                                <a href={`http://${candidate.website}`}>{candidate.website}</a> 
                                             : 
                                                 '---'
                                         }
