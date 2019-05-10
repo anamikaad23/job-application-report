@@ -20,7 +20,7 @@ class Report extends Component {
 
         const { jobs, skills, applicants } = data;
 
-        // Unique Skills
+        // Applicants Count
         const applicantsCount = applicants.length;
 
         // Unique Skills Count
@@ -33,7 +33,8 @@ class Report extends Component {
            const applicantSkills = skills.filter(skill => skill.applicant_id === applicant.id).map(skill => skill.name);
            const skillCount = applicantSkills.length;
            applicantSkills.forEach((skill, index) => {
-               const isNew = (index === 0);
+                // isNew: checks if the applicant is New 
+                const isNew = (index === 0);
                 candidates.push({...applicant, skill, skillCount, isNew});
            });
         });
