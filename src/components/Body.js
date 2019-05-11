@@ -18,12 +18,12 @@ class Body extends Component {
                                     </td>
                                 }
                                 {(candidate.isNew) &&
-                                    <td className='applicant-name' rowSpan={candidate. skillCount}>
+                                    <td className='applicant-name' rowSpan={candidate.skillCount}>
                                         {candidate.name}
                                     </td>
                                 }
                                 {(candidate.isNew) &&
-                                    <td rowSpan={candidate. skillCount}>
+                                    <td rowSpan={candidate.skillCount}>
                                         {
                                             candidate.email.length 
                                             ? 
@@ -34,7 +34,7 @@ class Body extends Component {
                                     </td>
                                 }
                                 {(candidate.isNew) &&
-                                    <td rowSpan={candidate. skillCount}>
+                                    <td rowSpan={candidate.skillCount}>
                                         {
                                             candidate.website.length 
                                             ? 
@@ -48,7 +48,7 @@ class Body extends Component {
                                     {candidate.skill}
                                 </td>
                                 {(candidate.isNew) &&
-                                    <td rowSpan={candidate. skillCount}>
+                                    <td rowSpan={candidate.skillCount}>
                                         {candidate.cover_letter}
                                     </td>
                                 }
